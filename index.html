@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple form</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      section {
+        background-image: url("/images/dino-unsplash.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        color: rgba(255, 255, 255, 0.719);
+        font-size: 5em;
+        /* margin: 0; */
+      }
+      label {
+        background-color: red;
+        color: white;
+        padding: 10px;
+      }
+      button {
+        padding: 10px;
+      }
+      button:nth-of-type(1) {
+        background-color: rgba(255, 255, 255, 0.801);
+        color: red;
+        border-color: red;
+      }
+      button:nth-of-type(2) {
+        background-color: red;
+        color: white;
+        border: none;
+      }
+      input[type="text"] {
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Travel the word</h1>
+      <form action="#">
+        <label for="from">From</label>
+        <input type="text" name="from" />
+        <label for="to">To</label>
+        <input type="text" name="to" />
+        <button type="reset">Surprice me</button>
+        <button type="submit">Let's go</button>
+      </form>
+    </section>
+  </body>
+</html>
