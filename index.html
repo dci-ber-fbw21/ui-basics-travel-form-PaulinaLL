@@ -24,7 +24,7 @@
       }
       h1 {
         color: rgba(255, 255, 255, 0.719);
-        font-size: 5em;
+        font-size: 6em;
         /* margin: 0; */
       }
       label {
@@ -48,6 +48,16 @@
       input[type="text"] {
         padding: 8px;
       }
+      button:hover {
+        background-color: rgb(195, 182, 182);
+        cursor: pointer;
+      }
+
+      /* label:focus {
+        input[type="text"] {
+          background-color: gray;
+        }
+      } */
     </style>
   </head>
   <body>
@@ -55,10 +65,10 @@
       <h1>Travel the word</h1>
       <form action="#">
         <label for="from">From</label>
-        <input type="text" name="from" />
+        <input type="text" name="from" required />
         <label for="to">To</label>
-        <input type="text" name="to" />
-        <button type="reset">Surprice me</button>
+        <input type="text" name="to" required />
+        <button type="reset">New reaserch</button>
         <button type="submit">Let's go</button>
       </form>
     </section>
