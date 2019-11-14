@@ -54,15 +54,17 @@
       }
 
       /* label:focus input[type="text"] {
-        background-color: gray;
-        cursor: pointer;
-      } */
+              background-color: gray;
+              cursor: pointer;
+            } */
 
       label:hover {
         cursor: pointer;
       }
-
       @media only screen and (max-width: 600px) {
+        section {
+          max-width: 599px;
+        }
       }
     </style>
   </head>
@@ -70,12 +72,14 @@
     <section>
       <h1>Travel the word</h1>
       <form action="#">
-        <label for="from">From</label>
-        <input type="text" name="from" id="from" required />
-        <label for="to">To</label>
-        <input type="text" name="to" id="to" required />
-        <button type="reset">New reaserch</button>
-        <button type="submit">Let's go</button>
+        <label for="from">From</label
+        ><input type="text" name="from" id="from" required />
+        <label for="to">To</label
+        ><input type="text" name="to" id="to" required />
+        <div>
+          <button type="reset">New reaserch</button>
+          <button type="submit">Let's go</button>
+        </div>
       </form>
       <!-- name and id needs to have the same name, the value can be different -->
     </section>
