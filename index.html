@@ -53,11 +53,14 @@
         cursor: pointer;
       }
 
-      /* label:focus {
-        input[type="text"] {
-          background-color: gray;
-        }
+      /* label:focus input[type="text"] {
+        background-color: gray;
+        cursor: pointer;
       } */
+
+      label:hover {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -65,9 +68,9 @@
       <h1>Travel the word</h1>
       <form action="#">
         <label for="from">From</label>
-        <input type="text" name="from" required />
+        <input type="text" name="from" id="from" required />
         <label for="to">To</label>
-        <input type="text" name="to" required />
+        <input type="text" name="to" id="to" required />
         <button type="reset">New reaserch</button>
         <button type="submit">Let's go</button>
       </form>
