@@ -57,24 +57,30 @@
         cursor: pointer;
       }
 
-      /* label:focus input[type="text"] {
-              background-color: gray;
-              cursor: pointer;
-            } */
-
       label:hover {
         cursor: pointer;
       }
+
       div {
         position: relative;
         padding: 20px 0;
-        /* width: 200px; */
         display: flex;
         justify-content: flex-end;
       }
       @media only screen and (max-width: 600px) {
         section {
           max-width: 599px;
+        }
+        .form {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+        h1 {
+          text-align: center;
+        }
+        label {
+          margin-top: 20px;
         }
       }
     </style>
@@ -83,10 +89,12 @@
     <section>
       <h1>Travel the word</h1>
       <form action="#">
-        <label for="from">From</label
-        ><input type="text" name="from" id="from" required />
-        <label for="to">To</label
-        ><input type="text" name="to" id="to" required />
+        <div class="form">
+          <label for="from">From</label
+          ><input type="text" name="from" id="from" required />
+          <label for="to">To</label
+          ><input type="text" name="to" id="to" required />
+        </div>
         <div>
           <button type="reset">New reaserch</button>
           <button type="submit">Let's go</button>
